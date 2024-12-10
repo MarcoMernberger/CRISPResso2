@@ -84,14 +84,14 @@ def main():
               'Programming Language :: Python :: 3 :: Only',
               'Programming Language :: Cython',
               ],
-          install_requires=[
-              'pandas',  # '>=0.15,<=0.24',
-              'matplotlib',  # '>=1.3.1,<=2.2.3',
-              'seaborn', # '>0.7.1,<0.10',
-              'jinja2',
-              'scipy',
-              'numpy',
-              ],
+#          install_requires=[
+#              'pandas',  # '>=0.15,<=0.24',
+#              'matplotlib',  # '>=1.3.1,<=2.2.3',
+#              'seaborn', # '>0.7.1,<0.10',
+#              'jinja2',
+#              'scipy',
+#              'numpy',
+#              ],
           cmdclass = command_classes,
           ext_modules = ext_modules
           )
