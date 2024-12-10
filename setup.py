@@ -25,8 +25,13 @@ except:
 
 ext = '.pyx' if has_cython else '.c'
 
-from numpy import get_include as numpy_get_include
-numpy_include_dir = [numpy_get_include()]
+try:
+    from numpy import get_include as numpy_get_include
+    numpy_include_dir = [numpy_get_include()]
+except ImportError:
+    pass
+
+
 
 import sys
 import re
